@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' type='text/css' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' />
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-  
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+<head>
+<title><%= title %></title>
+<link rel='stylesheet' type='text/css' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' />
+<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+ 
+
+
+	
+
+<div class='container'>  
+
+	<div class="header clearfix">
+        <nav>
+			<div class='col-md-3'>
+				<ul class="nav nav-pills pull-left">
+    				<li><button>Morgi</button></li>
+    			</ul>   
+			</div>
+
+			<div class='col-md-6'>
+				<h1><%= title %></h1>
+			</div>
+
+			<div class='col-md-3'>
+				<ul class="nav nav-pills pull-right">   
+					<li><button>Matches</button></li>
+    			</ul> 
+			</div>
+        </nav>
+     </div>
+	
+	<div class="row"><!-- photos -->
+		<div class='col-md-3'></div><!-- sidebar -->
+		    <div class="col-md-6">
+		    	<!-- <img src="photo" /> -->
+		    </div>
+		<div class='col-md-3'></div><!-- sidebar -->
+	</div><!-- row -->
+
+	<div class="row"><!-- blurbs -->
+		<div class='col-md-3'></div><!-- sidebar -->
+			<div class="col-md-6">
+				<!-- <p>blurb</p> -->
+				<p>Puppy kitty ipsum dolor sit good dog rover pet gate hamster tuxedo kitty pet gate bark brush pet supplies hamster. Meow toy dog fur run fast warm park heel puppy tongue lick treats wagging stay window.</p>
+		    </div>
+    	<div class='col-md-3'></div>
+    </div><!-- row -->
+
+	<div class="row"><!-- buttons -->
+		<div class='col-md-3'></div><!-- sidebar -->
+			<div class="col-md-6">
+			    <button id="reject">Lookin' Ruff :( </button><button id="confirm">Bow-WOW! ♥ </button>
+		    </div>
+    	<div class='col-md-3'></div>
+    </div><!-- row -->
+
+</div><!-- container -->
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
