@@ -25,22 +25,24 @@ router.get('/', function(req, res, next) {
 	    function jaxify(corgi){
 	        $.ajax({
 	            type: 'get',
-	            // Really not sure about syntax here
-	            //seed: 'corgi',
+	            //get mongodb corgi.picture(url)
+	            picture: picture,
 	            dataType: 'json',
 	            success: function(data, status, jqXHR) {
+
+
 	                $('#results').append(html);
 	            },
 	        });
 	    }
 
-	    $('#results').on('click', '.more', function() {
-	        var corgi = $(this).val();
+	    $('#results').on('click', '.confirm', function() {
+	        var corgiLikey = $(this).val();
 	        jaxify(corgi);
 	    });
 
-	    function init(pictures) {
-	            return pictures.data[
+	    function init(data) {
+	            return data.data[
 	                Math.floor(
 	                    Math.random() * pictures.data.length
 	                )
@@ -48,7 +50,7 @@ router.get('/', function(req, res, next) {
 	    }
 	});
 
-	res.render('index', { title: 'KorgiKiss', name: name, picture: picture, age: age, blurb: blurb });
+	res.render('index', { title: 'KorgiKiss', name: name, picture: picture, blurb: blurb });
 });
 
 router.get('*', function(req, res, next) {
