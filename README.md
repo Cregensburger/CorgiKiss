@@ -15,6 +15,15 @@ OkCorgi functions similarly to Tinder, but with [adorable dog photos](https://ww
 - Once the user either "paws left" or "paws right", the next dog's photo and profile info is loaded up.
 - There should be a link on the page that allows a user to see which dogs they have already liked. When the user clicks the link, the first 10 dogs they have liked should show up (allowing the user to "paginate", or see more dogs they have liked, is part of the Bonus).
 
+## Process
+
+[Alt tag!](public/images/erd.jpg)
+
+[Alt tag!](public/images/mock_up.jpg)
+
+[Alt tag!](public/images/tasks_by_val.jpg)
+
+
 ## Technology
 
 OkCorgi is a **single-page app** powered by a **Node server** and a **Mongo database**, meaning whenever possible we want to use **AJAX** to avoid reloading the page to retrieve data.
